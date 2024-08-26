@@ -1,0 +1,25 @@
+#chart {
+    font: 10px sans-serif;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .dot {
+    fill: red;
+    stroke: #000;
+  }
+
+  .title1{
+    color: coral;
+  }
