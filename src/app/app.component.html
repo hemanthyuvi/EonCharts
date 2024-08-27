@@ -10,14 +10,13 @@
   </div>
   <div class="d-flex flex-row mb-3 chartButtonsSection border-bottom justify-content-between">
     <div class="p-2">
-      <button type="button" class="btn btn-outline-danger ms-4">1  Month</button>
-      <button type="button" class="btn btn-outline-danger ms-4">3 Months</button>
-      <button type="button" class="btn btn-outline-danger ms-4">6 Months</button>
-      <button type="button" class="btn btn-outline-danger ms-4">Year</button>
+      <button type="button" class="btn btn-outline-danger ms-4" (click)="monthClicked(1)">1  Month</button>
+      <button type="button" class="btn btn-outline-danger ms-4" (click)="monthClicked(3)">3 Months</button>
+      <button type="button" class="btn btn-outline-danger ms-4" (click)="monthClicked(6)">6 Months</button>
+      <button type="button" class="btn btn-outline-danger ms-4" (click)="monthClicked(12)">Year</button>
     </div>
     <div class="p-2">
       <div class="d-flex flex-row dateSection">
-        <form class="row row-cols-sm-auto">
           <div class="d-flex flex-row fromDate ms-4">
             <div class="col-12">
               <div class="input-group d-flex justify-content-center align-items-center">
@@ -46,11 +45,11 @@
                 ngbDatepicker
                 #e="ngbDatepicker"
                 (click)="e.toggle()"
+                (change)="dateChanged()"
               />
             </div>
           </div>
       </div>
-    </form>
       </div>
     </div>
   </div>
